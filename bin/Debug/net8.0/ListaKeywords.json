@@ -1,0 +1,127 @@
+[
+  {
+    "category": "cancer",
+    "keywords": [
+      "cancer",
+      "carcinoma",
+      "tumor",
+      "neoplasm",
+      "malignancy",
+      "oncology",
+      "metastasis",
+      "chemotherapy",
+      "radiotherapy"
+    ]
+  },
+  {
+    "category": "syncope",
+    "keywords": [
+      "syncope",
+      "fainting",
+      "loss of consciousness",
+      "vasovagal",
+      "orthostatic hypotension",
+      "transient loss of consciousness"
+    ]
+  },
+  {
+    "category": "fever",
+    "keywords": [
+      "fever",
+      "pyrexia",
+      "high temperature",
+      "febrile",
+      "infectious fever",
+      "low-grade fever",
+      "hyperthermia"
+    ]
+  },
+  {
+    "category": "hypertension",
+    "keywords": [
+      "hypertension",
+      "high blood pressure",
+      "elevated blood pressure",
+      "systolic pressure",
+      "diastolic pressure",
+      "cardiovascular risk"
+    ]
+  },
+  {
+    "category": "influenza",
+    "keywords": [
+      "influenza",
+      "flu",
+      "seasonal flu",
+      "viral infection",
+      "H1N1",
+      "respiratory virus"
+    ]
+  },
+  {
+    "category": "covid",
+    "keywords": [
+      "COVID-19",
+      "SARS-CoV-2",
+      "coronavirus",
+      "pandemic",
+      "respiratory syndrome",
+      "long COVID"
+    ]
+  },
+  {
+    "category": "depression",
+    "keywords": [
+      "depression",
+      "major depressive disorder",
+      "low mood",
+      "clinical depression",
+      "MDD",
+      "psychological symptoms"
+    ]
+  },
+  {
+    "category": "asthma",
+    "keywords": [
+      "asthma",
+      "bronchial asthma",
+      "wheezing",
+      "shortness of breath",
+      "dyspnea",
+      "airway inflammation"
+    ]
+  },
+  {
+    "category": "diabetes",
+    "keywords": [
+      "diabetes",
+      "diabetes mellitus",
+      "type 1 diabetes",
+      "type 2 diabetes",
+      "hyperglycemia",
+      "insulin resistance"
+    ]
+  },
+  {
+    "category": "epilepsy",
+    "keywords": [
+      "epilepsy",
+      "seizure",
+      "convulsion",
+      "neurological disorder",
+      "epileptic",
+      "tonic-clonic"
+    ]
+  },
+  {
+    "category": "heart attack",
+    "keywords": [
+      "heart attack",
+      "myocardial infarction",
+      "chest pain",
+      "coronary artery",
+      "cardiac arrest",
+      "angina"
+    ]
+  }
+]

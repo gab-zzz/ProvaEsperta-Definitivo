@@ -1,0 +1,50 @@
+<Window xmlns="https://github.com/avaloniaui" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        mc:Ignorable="d" x:Class="Prova_Esperta.MainWindow" 
+        xmlns:local="clr-namespace:Prova_Esperta" 
+        x:DataType="local:ViewModel" 
+        Title="Assistente Medico" 
+        Width="600" 
+        Height="700" 
+        Background="#111133">
+    <!-- Contenitore principale con gestione automatica della grandezza -->
+    <Grid>
+        <Border Background="#171740" CornerRadius="20" Padding="22" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#3b3b7a" BorderThickness="2" MaxWidth="550">
+            <StackPanel Spacing="16">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10">
+                    <TextBlock Text="HealthAssist" HorizontalAlignment="Center" FontSize="26" FontWeight="Bold" Foreground="#7c89e8" />
+                    <TextBlock Text="AI" HorizontalAlignment="Center" FontSize="26" FontWeight="Bold" Foreground="#5a6acf" />
+                </StackPanel>
+                
+                <Rectangle Height="2" Fill="#2e2e5a" Margin="30,5,30,10" />
+                
+                <TextBlock Text="Descrivi i tuoi sintomi:" FontSize="16" Foreground="#a2a8ff" FontWeight="SemiBold" />
+                <TextBox Text="{Binding Domanda, Mode=TwoWay}" FontSize="14" Background="#1e1e48" BorderBrush="#3b3b7a" CornerRadius="10" Padding="12" Foreground="#d6d9f4" Watermark="Cosa stai provando?" />
+                
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="15">
+                    <Button Content="Consulta Medico" Command="{Binding EseguiDomandaCommand}" Background="#5a6acf" Foreground="White" Padding="15,8" CornerRadius="8" FontWeight="SemiBold" />
+                    <Button Content="Nuova Sessione" Command="{Binding VerificaServerCommand}" Background="#4c3b8e" Foreground="White" Padding="15,8" CornerRadius="8" FontWeight="SemiBold" />
+                </StackPanel>
+                
+                <TextBlock Text="{Binding StatusMessage}" FontSize="14" Foreground="#7782d1" TextWrapping="Wrap" Margin="0,5,0,5" />
+                
+                <!-- Area risultati con stile della seconda grafica -->
+                <Grid RowDefinitions="Auto,*">
+                    <Border Grid.Row="0" Background="#2d366a" BorderBrush="#3b3b7a" BorderThickness="2,2,2,0" CornerRadius="12,12,0,0">
+                        <TextBlock Text="Valutazione Professionale" Foreground="#d6d9f4" FontWeight="SemiBold" Padding="12,6" />
+                    </Border>
+                    <Border Grid.Row="1" Background="#1d1d45" BorderBrush="#3b3b7a" BorderThickness="2,0,2,2" CornerRadius="0,0,12,12">
+                        <ScrollViewer Height="230" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                            <TextBlock Text="{Binding Risposta}" TextWrapping="Wrap" FontSize="14" Padding="10" Foreground="#e2e6ff" 
+                                       Width="{Binding $parent[ScrollViewer].Bounds.Width}" />
+                        </ScrollViewer>
+                    </Border>
+                </Grid>
+                
+                <TextBlock Text="Questa applicazione non sostituisce una visita medica professionale" HorizontalAlignment="Center" FontSize="11" Foreground="#7782d1" FontStyle="Italic" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
